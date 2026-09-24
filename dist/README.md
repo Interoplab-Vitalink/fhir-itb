@@ -1,15 +1,23 @@
-# Distribution images
+# Dist build assets
 
-This folder contains the Dockerfiles required to build the necessary images for the distribution of the ITB FHIR
-Testing Sandbox.
+This folder holds Dockerfiles used when building project images.
 
-Read more each image in their respective subfolder.
+## fhir-test-services
 
-# Running the Sandbox
+Used by the root `docker-compose.yml` (`--profile full`) to build the
+`fhir-test-services` container from local sources.
 
-To run the sandbox, simply use `docker compose` to start the services.
+See [itb-fhir-test-services/README.md](itb-fhir-test-services/README.md).
+
+## gitb-ui-fhir-sandbox
+
+Optional Dockerfile to package `gitb-ui` with the FHIR community configuration
+from `config/data`.
+
+See [gitb-ui-fhir-sandbox/README.md](gitb-ui-fhir-sandbox/README.md).
+
+To run the sandbox locally, use the root Compose file:
 
 ```shell
-# from the project root folder
-docker compose -f dist/docker-compose.yml up -d
+docker compose --profile full up
 ```
