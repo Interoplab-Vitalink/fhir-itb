@@ -13,7 +13,7 @@ Test suites are defined in the `test-suites` directory.
 
 ### Steps:
 
-1. [Run the current sandbox environment](../dist/README.md)
+1. [Run the current sandbox environment](../README.md) (e.g. `docker compose --profile full up`)
 2. Deploy the new test cases to the ITB environment.
    > [!NOTE]
    > You can find shell scripts under the `/test-suites/deploy` directory that

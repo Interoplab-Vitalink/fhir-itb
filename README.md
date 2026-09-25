@@ -24,9 +24,5 @@ To include the `fhir-test-services` image, add the `full` profile:
 docker compose --profile full up 
 ```
 
-# Distribution
-
-The sandbox is distributed as a set of docker images that can be run using the docker-compose file located in the
-`dist` folder.
-
-Read more about building the distribution images in the [dist/README.md](dist/README.md) file.
+The `fhir-test-services` image is built from
+[dist/itb-fhir-test-services/Dockerfile](dist/itb-fhir-test-services/Dockerfile).
