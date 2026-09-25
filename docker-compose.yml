@@ -52,7 +52,7 @@ services:
       - DATA_ARCHIVE_KEY=fhir
       # Flag to enable the Test Bed's REST API. This can be very useful for efficient test case development.
       - AUTOMATION_API_ENABLED=true
-      # Activate the generic vitalink theme.
+      # Activate the Vitalink theme.
       - THEME=vitalink
     volumes:
       - gitb-repo:/gitb-repository
