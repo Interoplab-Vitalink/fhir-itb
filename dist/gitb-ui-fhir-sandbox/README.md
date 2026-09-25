@@ -11,7 +11,8 @@ is [publicly available in Docker Hub](https://hub.docker.com/r/jungst46/gitb-ui-
 > If changes are made to the gitb configuration or a new version of `gitb-ui`
 > image is needed, we must build and publish a new version of this image.
 >
-> See [here](../../test-suites/README.md) for more information.
+> Update `config/data/itb_config.zip` (community export) as needed, then rebuild
+> this image.
 
 # Sandbox Configuration
 
